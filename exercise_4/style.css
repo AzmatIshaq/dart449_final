@@ -1,0 +1,110 @@
+/* Project Styling */
+
+/* Color Palette
+
+#1E1E26
+
+Emphasis
+
+*/
+
+/* *:hover {
+  outline: green solid 1px;
+} */
+
+body {
+  display: grid;
+  background-color: #1E1E26;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Unlike percentages, auto and fr values can be expanded based on the size of their internal content. */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 56fr 1fr;
+}
+
+/* Margin content */
+
+.margin-left {
+  background-color: #1E1E26;
+}
+
+.margin-right {
+  background-color: #1E1E26;
+}
+
+/* Middle Section Container */
+
+.middle-container {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Navbar */
+
+.nav {
+  display: grid;
+  justify-content: center;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: #111;
+}
+
+
+/* Main Content */
+
+
+.main-content-container {
+
+}
+
+.tasks {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: white;
+}
+
+.avatar-card img {
+  width: 100%;
+  background-color: #C9C9C9;
+}
+
+#avatar-text {
+  color: black;
+  /* margin: 10%; */
+  white-space: pre-wrap;
+  margin: 10%;
+  text-indent: 0;
+  min-height: 100px;
+}
+
+#character1-form {
+  color: black;
+  margin-left: 10%;
+  display: grid;
+}
