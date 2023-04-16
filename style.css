@@ -1,0 +1,459 @@
+/* Project Styling */
+
+/* Color Palette
+
+#1E1E26  #ECEBF2
+#ABA0F2  #7F6DF2
+#5F49F2  #98FF98
+
+Emphasis
+
+*/
+
+*:hover {
+  /* outline: green solid 1px; */
+}
+
+body {
+  display: grid;
+  background-color: #1E1E26;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Unlike percentages, auto and fr values can be expanded based on the size of their internal content. */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 56fr 1fr;
+}
+
+/* Margin content */
+
+.margin-left {
+  background-color: #1E1E26;
+}
+
+.margin-right {
+  background-color: #1E1E26;
+}
+
+/* Middle Section Container */
+
+.middle-container {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Navbar */
+
+.nav {
+  display: grid;
+  justify-content: center;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: #111;
+}
+
+
+/* Main Content */
+
+.main-content-container {
+
+}
+
+.tasks {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: white;
+}
+
+.avatar-card img {
+  width: 100%;
+  background-color: #C9C9C9;
+}
+
+#avatar-text {
+  color: black;
+  /* margin: 10%; */
+  white-space: pre-wrap;
+  margin: 10%;
+  text-indent: 0;
+  min-height: 100px;
+}
+
+#character1-form {
+  color: black;
+  margin-left: 10%;
+  display: grid;
+}
+
+/* Tasks Page Styling */
+
+.tasks-cards-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 50px;
+  margin: 10% 10% 0% 10%;
+}
+
+.tasks-cards {
+  display: grid;
+  grid-template-columns: 1fr 3fr 6fr;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  transition: transform 0.2s ease;
+  border-radius: 5%;
+
+}
+
+.tasks-cards:hover {
+   transform: scale(1.03);
+   cursor: pointer;
+}
+
+.tasks-cards:hover .task-card-text {
+   color: white;
+}
+
+.tasks-cards:hover img {
+   opacity: 1;
+ }
+
+.tasks-cards img {
+  position: absolute;
+  width: 80px;
+  opacity: 0.5;
+}
+
+.task-number-container {
+  color: black;
+  background-color: #ECEBF2;
+  text-align: center;
+  aspect-ratio: 1/1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+  /* margin-left: 40%; */
+}
+
+.task-number {
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* aspect-ratio: 1/1; */
+  margin-top: 14%;
+
+}
+
+.task-card-text {
+  color: grey;
+}
+
+#task-number-3 {
+  background-color: #98FF98;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* Profile Page Styling */
+
+.profile-template {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "profile-header"
+    "profile-photo"
+    "profile-name"
+    "profile-bio"
+    "profile-evaluation"
+    "profile-biometrics";
+  color: white;
+}
+
+.profile-header {
+  grid-area: profile-header;
+  text-align: center;
+  margin-top: 5%;
+  /* background-color: red; */
+}
+
+.profile-photo {
+  grid-area: profile-photo;
+  width: 30%;
+    /* background-color: green; */
+}
+
+.profile-photo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-name {
+  grid-area: profile-name;
+  /* background-color: pink; */
+}
+
+.profile-bio {
+  grid-area: profile-bio;
+  /* background-color: blue; */
+}
+
+.profile-evaluation {
+  grid-area: profile-evaluation;
+  /* background-color: yellow; */
+}
+
+.profile-biometrics {
+  grid-area: profile-biometrics;
+  /* background-color: grey; */
+}
+
+/* Add Mediq Queries */
+
+#button-interactions {
+  margin-top: 10%;
+}
+
+#button-interactions button {
+  background-color: #ECEBF2;
+}
+
+#user-input-interaction {
+  padding-top: 10%;
+}
+
+.progress-container {
+  width: 50%;
+  margin: 50px auto;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  background-color: #ccc;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #98FF98;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress-text {
+  position: absolute;
+  color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#user-input-interaction {
+  margin-top: 10%;
+  margin-left: 10%;
+  padding-left: 10%;
+}
+
+
+/* // Overlay effect */
+
+.overlay-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+/* Style for the overlay */
+  .overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: calc(50vh - 100px);
+    bottom: 0;
+    left: calc(50vw - 150px);
+    right: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent black */
+    z-index: 999; /* Make sure it appears on top */
+  }
+
+/* Style for the content inside the overlay */
+  .overlay-content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    color: black;
+    font-size: 1.2em;
+  }
+
+
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+
+
+  /* Card 3 Overlay styling */
+
+
+  #map {
+    width: 50%;
+    }
+
+/* Training Page Styling */
+
+  .training-container {
+    display: grid;
+    grid-template-columns: auto 20% 40%;
+    margin-top: 5%;
+  }
+
+  @keyframes bg-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 50% ;
+  }
+}
+
+.progress-text {
+  user-select: none;
+}
+
+  .training-dummy-profile {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .training-dummy-profile img {
+    width: 250px;
+    aspect-ratio: 1/1;
+    background: radial-gradient(circle at center, #3c3c3c, #1E1E26 70%);
+  }
+
+  .training-variables-left {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 210px;
+
+
+  }
+
+  .training-variables-left p {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    border-radius: 10px;
+    background-color: #ECEBF2;
+    height: 23px;
+    color: black;
+    padding: 0px 3px 0px 3px;
+    user-select: none;
+
+  }
+
+  .training-variables-left p {
+    transition: transform .2s;
+  }
+
+  .training-variables-left p:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+
+  .training-variables-right {
+    display: flex;
+
+    /* grid-template-columns: auto auto; */
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .droppable {
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    width: 160px;
+    height: 120px;
+    margin-top: 2%;
+    /* aspect-ratio: 1/1; */
+    /* border-radius: 100px; */
+    background-color: #696969;
+    user-select: none;
+    transition: background-color 0.4s ease-in-out;
+
+  }
+
+  .droppable:hover {
+    background-color: #ABA0F2;
+  }
+
+  .shrink-and-disappear {
+visibility: hidden;
+}
+
+
+#training-analysis-text {
+  margin: 5% 20% 0% 20%;
+  /* margin-left: 10%;
+  margin-top: 3%; */
+  /* white-space: pre-wrap; */
+}

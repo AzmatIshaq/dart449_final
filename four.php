@@ -10,13 +10,9 @@
     </div>
 
     <div class="middle-container">                       <!-- Middle Container -->
-      <div class="nav">                                  <!--  Navigation -->
-        <ul>
-          <li><a href="#news">Tasks</a></li>
-          <li><a class="active" href="#home">Training</a></li>
-          <li><a href="#contact">Profile</a></li>
-        </ul>
-      </div>
+
+      <?php include_once 'navigation.php';
+      ?>                                                        <!-- Navigation -->
 
       <div class="main-content-container">               <!--  Main Content Container-->
 
